@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'gotic';
+    src: url('../fontes/OldLondon.ttf') format('TrueType'); 
+    font-weight: normal;
+}
+
+:root {
+    --cor001: #F4E499;
+    --cor002: #DBC14D;
+    --cor003: #A8943B;
+    --cor004: #615211;
+    --cor005: #5C5120;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-gotic:'gotic', 'cursive';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor001);
+    font-family: var(--fonte-destaque);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor002), var(--cor005));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1  {
+    font-family: var(--fonte-gotic);
+    color: white;
+    font-size: 4em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+        max-width: 600px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.315);
+}
+
+nav {
+    background-color: var(--cor005);
+    text-align: left;
+    
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.103);
+}
+
+nav > a {
+    color: var(--cor001);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor003);
+    color: var(--cor005)
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: justify;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+    margin-bottom: 30px;
+    border-bottom-left-radius:  10px; 
+    border-bottom-right-radius: 10px;
+}
+
+h2 {
+    color: var(--cor005);
+    padding-left: -40px;
+    text-align: left;
+}
+
+main h2 {
+    padding-left: 1em;
+    text-align: center;
+}
+
+main p { 
+    color: black;
+    text-indent: 30px;
+    padding-left: 1em;
+}
+
+
+aside  {
+    padding: auto;
+    margin-top: 1em;
+    padding-left: 20px;
+    display: flex;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background-color: var(--cor005);
+    color: white;
+    border: none;
+}
+
+form button:hover {
+    background-color: var(--cor003);
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    outline-color: var(--cor002);
+}
+
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+
+.social-links a {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2 {
+    text-align: left;
+    color: black;
+    font-family: var(--fonte-gotic);
+    font-size: 2.5em;
+}
+
+.contact-methods {
+    display: flex;
+
+}
+
+footer {
+    background-color: var(--cor005);
+    text-align: center;
+    font-size: 0.8;
+    padding: 5px;
+}
+
+footer p {
+    color: white;
+}
+
+.direita {
+    font-size: 0.8em;
+    margin-left: 10em;
+}
+
