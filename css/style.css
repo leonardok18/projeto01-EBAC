@@ -49,8 +49,6 @@ header > p {
         color: white;
         font-size: 1.2em;
         text-align: center;
-        min-width: 548px;
-        max-width: 00px;
         padding: 20px;
         margin: auto;
         margin-bottom: 20px;
@@ -84,7 +82,6 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     text-align: justify;
-    min-width: 548px;
     max-width: 800px;
     padding: 20px;
     margin: auto;
@@ -94,7 +91,6 @@ main {
     border-bottom-left-radius:  10px; 
     border-bottom-right-radius: 10px;
 }
-
 
 main h2 {
     color: var(--cor005);
@@ -120,7 +116,7 @@ form input,
 form textarea,
 form button {
     display: block;
-    width: 320px;
+    width: 220px;
     margin-bottom: 8px;
     padding: 8px;
 }
@@ -193,3 +189,40 @@ footer p {
     align-content: flex-end;
 }
 
+@media (max-width: 568px) {
+main{
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.teste{
+    width: 100%; 
+}
+.img{
+    width: 100%;
+}
+
+picture{
+    margin: auto;
+}
+.img{
+    width: 100%;
+}
+.contact{
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center; 
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.contact-methods{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
